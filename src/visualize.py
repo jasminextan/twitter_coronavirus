@@ -15,9 +15,10 @@ from collections import Counter,defaultdict
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 
 # make things pretty with seaborn
+"""
 sns.set(font=’Franklin Gothic Book’,
         rc={
  ‘axes.axisbelow’: False,
@@ -43,6 +44,7 @@ sns.set(font=’Franklin Gothic Book’,
 sns.set_context("notebook", rc={"font.size":16,
                                 "axes.titlesize":20,
                                 "axes.labelsize":18})
+"""
 
 # open the input path
 with open(args.input_path) as f:
