@@ -72,6 +72,7 @@ values = values[::-1]
 # plot the bar graph
 plt.bar(range(len(keys)), values, color = "seagreen")
 plt.xticks(range(len(keys)), keys)
+plt.rcParams["figure.figsize"] = (10,8)
 
 # set the title and axis labels
 if args.input_path[-1] == 'g':
