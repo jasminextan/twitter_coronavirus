@@ -74,14 +74,14 @@ $ python3 ./src/visualize.py --input_path=reduced.country --key='#코로나바�
 
 ### Alternative Reduce
 `alternative_reduce.py` combines `reduce.py` and `visualize.py` to make graphs like the following:
-**#ivermectin #bleach in 2020**
+**#covid19 #flu in 2020**
 ```
-$ python3 ./src/alternative_reduce.py --keys '#ivermectin' '#bleach'
+$ python3 ./src/alternative_reduce.py --keys '#covid19' '#flu'
 ```
-![#ivermectin #bleach in 2020](ivermectin_bleach.png)
+![#covid19 #flu in 2020](covid19_flu.png)
 
-**#hoax #scamdemic #plandemic in 2020**
+**#hospital #nurse in 2020**
 ```
-$ python3 ./src/alternative_reduce.py --keys '#hoax' '#scamdemic' '#plandemic'
+$ python3 ./src/alternative_reduce.py --keys '#hospital' '#nurse'
 ```
-![#hoax #scamdemic #plandemic in 2020](hoax_scamdemic_plandemic.png)
+![#hospital #nurse in 2020](hospital_nurse.png)
