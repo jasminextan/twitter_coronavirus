@@ -45,7 +45,29 @@ $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
 You can create a bar chart of the number of tweets that used #coronavirus for the top 10 languages.
 
 I'm a big fan of making things pretty, so I tried to use `seaborn`, a Python visualization library based on `matplotlib`, to make everything prettier. You can find documentation for it here: [seaborn github repo](https://github.com/mwaskom/seaborn).
-Unfortuately, I was unsuccessful.
+Unfortuately, I was unsuccessful, so I settled for making the font nice and the colors green.
 
 ## Outputs
+**#coronavirus in 2020 by Language**
+```
+python3 ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
+```
+![#coronavirus by language](coronavirus_lang.png)
 
+**#coronavirus in 2020 by Country**
+```
+python3 ./src/visualize.py --input_path=reduced.country --key='#coronavirus'
+```
+![#coronavirus by country](coronavirus_country.png)
+
+**#코로나바이러 in 2020 by Language**
+```
+python3 ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
+```
+![#코로나바이러by language](코로나바이러스_lang.png)
+
+**#코로나바이러 in 2020 by Country**
+```
+python3 ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
+```
+![#코로나바이러by country](코로나바이러스_country.png)
