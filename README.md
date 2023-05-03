@@ -50,24 +50,38 @@ Unfortuately, I was unsuccessful, so I settled for making the font nice and the 
 ## Outputs
 **#coronavirus in 2020 by Language**
 ```
-python3 ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
+$ python3 ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
 ```
-![#coronavirus by language](coronavirus_lang.png)
+![#coronavirus in 2020 by language](coronavirus_lang.png)
 
 **#coronavirus in 2020 by Country**
 ```
-python3 ./src/visualize.py --input_path=reduced.country --key='#coronavirus'
+$ python3 ./src/visualize.py --input_path=reduced.country --key='#coronavirus'
 ```
-![#coronavirus by country](coronavirus_country.png)
+![#coronavirus in 2020 by country](coronavirus_country.png)
 
 **#코로나바이러 in 2020 by Language**
 ```
-python3 ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
+$ python3 ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
 ```
-![#코로나바이러by language](코로나바이러스_lang.png)
+![#코로나바이러 in 2020 by language](코로나바이러스_lang.png)
 
 **#코로나바이러 in 2020 by Country**
 ```
-python3 ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
+$ python3 ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
 ```
-![#코로나바이러by country](코로나바이러스_country.png)
+![#코로나바이러 in 2020 by country](코로나바이러스_country.png)
+
+### Alternative Reduce
+`alternative_reduce.py` combines `reduce.py` and `visualize.py` to make graphs like the following:
+**#ivermectin #bleach in 2020**
+```
+$ python3 ./src/alternative_reduce.py --keys '#ivermectin' '#bleach'
+```
+![#ivermectin #bleach in 2020](ivermectin_bleach.png)
+
+**#hoax #scamdemic #plandemic in 2020**
+```
+$ python3 ./src/alternative_reduce.py --keys '#hoax' '#scamdemic' '#plandemic'
+```
+![#hoax #scamdemic #plandemic in 2020](hoax_scamdemic_plandemic.png)
