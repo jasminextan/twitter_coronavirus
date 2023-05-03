@@ -45,6 +45,8 @@ sns.set_context("notebook", rc={"font.size":16,
                                 "axes.titlesize":20,
                                 "axes.labelsize":18})
 """
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
 
 # open the input path
 with open(args.input_path) as f:
@@ -68,7 +70,7 @@ keys = keys[::-1]
 values = values[::-1]
 
 # plot the bar graph
-plt.bar(range(len(keys)), values)
+plt.bar(range(len(keys)), values, color = "seagreen")
 plt.xticks(range(len(keys)), keys)
 
 # set the title and axis labels
@@ -77,9 +79,10 @@ if args.input_path[-1] == 'g':
 else:
     plt.xlabel('Country')
 if args.percent:
-    plt.ylabel('Percent of Total')
+    plt.ylabel('% of Tweets')
 else:
-    plt.ylabel('Tweet Volume')
+    plt.ylabel('# of Tweets')
+plt.title('Coronavirus Twitter Analysis')
 
 # save the bar graph as a PNG file
 if args.input_path[-1] == 'g':
